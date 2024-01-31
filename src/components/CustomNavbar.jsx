@@ -17,7 +17,7 @@ const CustomNavbar = () => {
             width={"60px"}
             className="me-2"
           ></img>
-          EpiHistory
+          EpiBooks
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

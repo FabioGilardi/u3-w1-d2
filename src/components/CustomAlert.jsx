@@ -12,7 +12,7 @@ function AlertDismissible() {
         variant="body"
         className="text-center border border-secondary my-4"
       >
-        <Alert.Heading>Welcome to EpiHistory !</Alert.Heading>
+        <Alert.Heading>Welcome to EpiBooks !</Alert.Heading>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
           harum, et, dolorem ab laborum totam magnam consequuntur quod quis enim
