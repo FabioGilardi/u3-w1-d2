@@ -5,9 +5,13 @@ import MyFooter from "./components/MyFooter";
 import CustomAlert from "./components/CustomAlert";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import BookCards from "./components/BookCards";
 import Col from "react-bootstrap/Col";
-
+import history from "./data/history.json";
+import scifi from "./data/scifi.json";
+import fantasy from "./data/fantasy.json";
+import romance from "./data/romance.json";
+import horror from "./data/horror.json";
+import BookList from "./components/BookList";
 function App() {
   return (
     <>
@@ -22,7 +26,7 @@ function App() {
             </Col>
           </Row>
           <Row xs={1} sm={2} md={3} lg={4} className="g-3 mt-5">
-            <BookCards />
+            <BookList genre={fantasy} />
           </Row>
         </Container>
       </main>

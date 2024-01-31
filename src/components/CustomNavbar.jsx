@@ -24,24 +24,7 @@ const CustomNavbar = () => {
           <Nav className="me-auto">
             <Nav.Link href="#features">Home</Nav.Link>
             <Nav.Link href="#pricing">About</Nav.Link>
-          </Nav>
-          <Nav>
-            <Form inline className="ms-auto">
-              <Row>
-                <Col xs="auto">
-                  <Form.Control
-                    type="text"
-                    placeholder="Search"
-                    className=" mr-sm-2"
-                  />
-                </Col>
-                <Col xs="auto">
-                  <Button type="submit" variant="secondary">
-                    Browse
-                  </Button>
-                </Col>
-              </Row>
-            </Form>
+            <Nav.Link href="#browse">Browse</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

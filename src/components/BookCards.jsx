@@ -1,7 +1,7 @@
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Col from "react-bootstrap/Col";
-import books from "../history.json";
+import books from "../data/history.json";
 
 const BookCards = () => {
   return books.map((book) => {
