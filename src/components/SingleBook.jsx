@@ -22,7 +22,7 @@ class SingleBook extends Component {
 
   render() {
     return (
-      <Col key={this.props.book.asin} md={4} lg={3}>
+      <Col key={this.props.book.asin} sm={6} md={4} lg={3}>
         <Card
           className={
             this.state.selected === true
