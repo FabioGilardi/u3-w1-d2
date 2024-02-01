@@ -2,6 +2,7 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { Component } from "react";
+import CommentArea from "./CommentArea";
 
 class SingleBook extends Component {
   state = {
@@ -42,6 +43,9 @@ class SingleBook extends Component {
               <Card.Text className="m-0">{this.props.book.price} €</Card.Text>
               <Button variant="secondary">Add to Cart</Button>
             </div>
+            {this.state.selected && (
+              <CommentArea bookId={this.props.book.asin} />
+            )}
           </Card.Body>
         </Card>
       </Col>
