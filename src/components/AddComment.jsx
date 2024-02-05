@@ -39,6 +39,17 @@ class AddComment extends Component {
       });
   };
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.commentForm.elementId !== this.props.bookId) {
+      this.setState({
+        commentForm: {
+          ...this.state.commentForm,
+          elementId: this.props.bookId,
+        },
+      });
+    }
+  }
+
   render() {
     return (
       <Form className="mt-4" onSubmit={this.publishComment}>
