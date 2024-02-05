@@ -12,7 +12,7 @@ class CommentArea extends Component {
   commentFetch = () => {
     fetch(
       "https://striveschool-api.herokuapp.com/api/comments/" +
-        this.props.bookId,
+        this.props.bookAsin,
       {
         headers: {
           Authorization:
@@ -41,13 +41,19 @@ class CommentArea extends Component {
     this.commentFetch();
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevProps.bookAsin !== this.props.bookAsin) {
+      this.commentFetch();
+    }
+  }
+
   render() {
     return (
-      <>
+      <div>
         {this.state.isLoading && <Loading />}
-        <AddComment bookId={this.props.bookId} />
+        <AddComment bookId={this.props.bookAsin} />
         <CommentList comments={this.state.comments} />
-      </>
+      </div>
     );
   }
 }

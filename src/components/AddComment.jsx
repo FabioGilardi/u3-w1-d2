@@ -6,7 +6,7 @@ class AddComment extends Component {
   state = {
     commentForm: {
       comment: "",
-      rate: "",
+      rate: "1",
       elementId: this.props.bookId,
     },
   };
@@ -25,6 +25,12 @@ class AddComment extends Component {
     })
       .then((response) => {
         if (response.ok) {
+          this.setState({
+            commentForm: {
+              comment: "",
+              rate: "1",
+            },
+          });
           return alert("Commento pubblicato correttamente");
         } else throw new Error();
       })
