@@ -17,7 +17,7 @@ const BookList = ({ genre }) => {
   const [bookAsin, setBookAsin] = useState("");
 
   const showSelectedBook = (bookasin) => {
-    if (this.state.selected === false) {
+    if (selected === false) {
       // this.setState({
       //   selected: true,
       // });
