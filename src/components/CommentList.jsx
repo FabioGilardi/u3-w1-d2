@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 const CommentList = ({ comments }) => {
   return comments.map((comment) => {
     return (
-      <div className="mb-3" key={comment._id}>
+      <div className="mb-3" key={comment._id} data-testid="commentlist">
         <p className="mb-1">{comment.author}</p>
         <p className="mb-1">{comment.comment}</p>
         <div className="d-flex align-items-center justify-content-between">

@@ -24,6 +24,7 @@ const SingleBook = ({ bookAsin, book, showSelectedBook }) => {
   return (
     <Col key={book.asin} sm={6} md={4} lg={3}>
       <Card
+        data-testid="card"
         className={
           book.asin === bookAsin
             ? "h-100 shadow border border-3 border-warning"
